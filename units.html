@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Teeny Tanks NG">
+    <meta name="description" content="Sniper no sniping">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../styles/units.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html" style="font-size:x-large">TeenyTanks</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="units.html" style="font-size:x-large">Units</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container pt-5">
+        <h1 class="pb-2">Units</h1>
+        <p>
+            Tank type units cannot move or shoot through terrain. Infantry units can move and aim through terrain.
+            <br>
+            Only two units of one type can be drafted.
+        </p>
+
+        <div class="d-flex flex-row justify-content-between">
+        <div class="card" style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="card-title">Basic</h5>
+              <h6>Tank</h6>
+              <p class="card-text"><ul>
+                <li>Damage: 5</li>
+                <li>Range: 4</li>
+                <li>Movement: 4</li>
+                <li>Health: 10</li>
+                <li>Chance: 1d6 > 3</li>
+              </ul>
+              <h6>Abilities</h6>
+              <ul>
+                <li>None</li>
+              </ul>
+            </p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="card-title">Shotgun</h5>
+              <h6>Tank</h6>
+              <p class="card-text"><ul>
+                <li>Damage: 4</li>
+                <li>Range: 3</li>
+                <li>Movement: 3</li>
+                <li>Health: 15</li>
+                <li>Chance: 1d6 > 3</li>
+              </ul>
+              <h6>Abilities</h6>
+              <ul>
+                <li>Can attack all enemy units w/in range</li>
+              </ul>
+            </p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="card-title">Sniper</h5>
+              <h6>Tank</h6>
+              <p class="card-text"><ul>
+                <li>Damage: 10</li>
+                <li>Range: 5-10</li>
+                <li>Movement: 4</li>
+                <li>Health: 5</li>
+                <li>Chance: 1d6 == 6</li>
+              </ul>
+              <h6>Abilities</h6>
+              <ul>
+                <li>None</li>
+              </ul>
+            </p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="card-title">Machinegun</h5>
+              <h6>Tank</h6>
+              <p class="card-text"><ul>
+                <li>Damage: 1</li>
+                <li>Range: 4</li>
+                <li>Movement: 2</li>
+                <li>Health: 15</li>
+                <li>Chance: 1d6 = Even</li>
+              </ul>
+              <h6>Abilities</h6>
+              <ul>
+                <li>On successful hit, roll again w/ +1 damage (scales 1,2,3...)</li>
+              </ul>
+            </p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="card-title">Scout</h5>
+              <h6>Infantry</h6>
+              <p class="card-text"><ul>
+                <li>Damage: 2</li>
+                <li>Range: 2</li>
+                <li>Movement: 6</li>
+                <li>Health: 10</li>
+                <li>Chance: 1d6 > 3</li>
+              </ul>
+              <h6>Abilities</h6>
+              <ul>
+                <li>All allies can attack enemy units in a friendly scouts range</li>
+              </ul>
+            </p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 14rem;">
+            <div class="card-body">
+              <h5 class="card-title">Saboteur</h5>
+              <h6>Infantry</h6>
+              <p class="card-text"><ul>
+                <li>Damage: 0</li>
+                <li>Range: 5</li>
+                <li>Movement: 4</li>
+                <li>Health: 10</li>
+                <li>Chance: 1d6 > 3</li>
+              </ul>
+              <h6>Abilities</h6>
+              <ul>
+                <li>On successful attack, take control of target enemy unit for this turn. Enemy unit cannot attack itself.</li>
+                <li>Player loses if saboteur is their last unit</li>
+              </ul>
+            </p>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    
+
+
+</body>
+</html>

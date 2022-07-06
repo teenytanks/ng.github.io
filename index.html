@@ -7,13 +7,59 @@
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Teeny Tanks NG">
-    <meta name="description" content=".">
+    <meta name="description" content="Sniper no sniping">
 
-    <!-- Stylesheets, Fonts, etc. -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     
 </head>
 <body>
-Content goes here.
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html" style="font-size:x-large">TeenyTanks</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="units.html" style="font-size:x-large">Units</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+      <div class="d-flex justify-content-around flex-column" style="font-size:x-large">
+        <p>
+            TeenyTanks is a 2 player board game that revolves around moving units on a 8x16 board and winning by eliminating all enemy units. 
+            You'll need a dice, some kind of game board, and some small objects to act as units to play.
+            This page will give some basic rules that are meant to be occasionally ambiguous. Disputes should be solved by replaying turns, or flipping coins, or whatever the players agree on.
+        </p>
+        <img src="../assets/spawns.png" width="600" height="300">
+        <p>
+            One player starts on the red squares, and the other starts on the blue squares. 
+            Before the game starts, each player must place 7 terrain pieces onto their side of the board (left half and right half).
+            Terrain pieces cannot be placed in a spawn zone, here's an example layout.
+        </p>
+        <img src="../assets/rocks.png" width="600" height="300">
+        <p>
+            Now the players each draft 4 units. Units are selected from the 6 existing classes, and a player cannot draft more than 2 units from one class.
+            Units are placed in the respective spawn zones (no stacking units) and players flip a coin to decide who moves first.
+        </p>
+        <img src="../assets/units.png" width="600" height="300">
+        <p>
+            Above is an example draft. During a player's turn, they select one controlled unit to make a move with. Said unit can either attack then move, or move then attack.
+            The selected unit does not need to move and/or attack, but movement and attack cannot be split amongst 2 units in one turn.
+        </p>
+        <p>
+            Stalemates: To avoid stalemates and speed up pace of play, on the 5th turn after damage has not been dealt to any units, and a unit has been destroyed, the leftmost and rightmost columns are removed. This continues every turn regardless of tank damage until the game ends.
+            If all remaining units are destroyed simultaneously on the same turn, the game ends in a stalemate.
+        </p>
+        <h5 style="font-size:x-large">This ruleset is extremely basic, but it's what I've found to work well from a couple hours of play. Feel free to change up the rules, add modes, or your own units.</h5>
+      </div>
+
 </body>
 </html>
